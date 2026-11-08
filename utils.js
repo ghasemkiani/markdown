@@ -1,7 +1,6 @@
 import { cutil } from "@ghasemkiani/base";
-import { Obj } from "@ghasemkiani/base";
 
-class Utils extends Obj {
+class Utils {
   static extractFirstCodeBlock(text) {
     text = cutil.asString(text);
     
