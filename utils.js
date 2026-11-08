@@ -7,7 +7,9 @@ class Utils {
     // Matches ```[optional language]\n [content] \n```
     // removed (?:\r?\n)?\s* from before ending backticks
     const match = text.match(/```(?:\w+)?\s*\r?\n([\s\S]*?)```/);
-    return match ? match[1].trim() : text;
+    text = match ? match[1] : text;
+    // text = text.trim();
+    return text;
   }
 }
 
